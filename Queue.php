@@ -1,6 +1,6 @@
 <?php
 
-namespace diszz\phpredis;
+namespace codecible\phpredis;
 
 use Yii;
 use yii\base\Component;
@@ -13,7 +13,7 @@ use yii\base\InvalidConfigException;
  * [
  *     'components' => [
  *         'queue' => [
- *             'class' => 'diszz\phpredis\Queue',
+ *             'class' => 'codecible\phpredis\Queue',
  *             'keyPrefix' => 'saas.queue:',
  *             'maxRunTimelong' => 299,//进程最大运行时间,单位秒
  *             'phpbin' => 'php',

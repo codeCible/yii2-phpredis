@@ -1,6 +1,6 @@
 <?php
 
-namespace diszz\phpredis;
+namespace codecible\phpredis;
 
 use Yii;
 use yii\di\Instance;

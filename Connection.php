@@ -1,6 +1,6 @@
 <?php
 
-namespace diszz\phpredis;
+namespace codecible\phpredis;
 
 use yii\base\Component;
 use yii\db\Exception;
@@ -13,7 +13,7 @@ use RedisException;
  * 普通模式配置方法:
  * 'components' => [
         'redis' => [
-            'class' => 'diszz\phpredis\Connection',
+            'class' => 'codecible\phpredis\Connection',
             'hostname' => '127.0.0.1',
             'password' => null,//qweasdzxc123456
             'port' => 6379,
@@ -25,7 +25,7 @@ use RedisException;
  * 哨兵模式配置方法:
  * 'components' => [
         'redis' => [
-            'class' => 'diszz\phpredis\Connection',
+            'class' => 'codecible\phpredis\Connection',
             'hostname' => '127.0.0.1',
             'password' => null,//qweasdzxc123456
             'port' => 6379,
@@ -37,7 +37,7 @@ use RedisException;
  * 集群模式配置方法:
  * 'components' => [
         'redis' => [
-            'class' => 'diszz\phpredis\Connection',
+            'class' => 'codecible\phpredis\Connection',
             'hostname' => '127.0.0.1',
             'password' => null,//qweasdzxc123456
             'port' => 6379,
@@ -50,7 +50,7 @@ use RedisException;
  *
  *
  * Class Connection
- * @package diszz\phpredis
+ * @package codecible\phpredis
  */
 class Connection extends Component
 {

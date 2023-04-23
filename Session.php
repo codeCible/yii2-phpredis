@@ -1,6 +1,6 @@
 <?php
 
-namespace diszz\phpredis;
+namespace codecible\phpredis;
 
 use yii\base\InvalidConfigException;
 use Yii;
@@ -19,7 +19,7 @@ use Yii;
  * [
  *     'components' => [
  *         'session' => [
- *             'class' => 'diszz\phpredis\Session',
+ *             'class' => 'codecible\phpredis\Session',
  *             'redis' => [
  *                 'hostname' => 'localhost',
  *                 'port' => 6379,
@@ -36,7 +36,7 @@ use Yii;
  * [
  *     'components' => [
  *         'session' => [
- *             'class' => 'diszz\phpredis\Session',
+ *             'class' => 'codecible\phpredis\Session',
  *             // 'redis' => 'redis' // id of the connection application component
  *         ],
  *     ],

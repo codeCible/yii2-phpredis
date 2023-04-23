@@ -6,29 +6,29 @@ yii2框架的基于new Redis() 方式连接redis, 有效解决fgets, fwrite 操�
 # 安装方法
 
 1.命令安装
-php composer.phar require --prefer-dist diszz/yii2-phpredis dev-master
+php composer.phar require --prefer-dist codecible/yii2-phpredis dev-master
 或
-composer require --prefer-dist diszz/yii2-phpredis dev-master
+composer require --prefer-dist codecible/yii2-phpredis dev-master
 
 2.下载文件包, 
-在vendor文件夹下新建文件夹diszz, 解压后复制yii2-phpredis到diszz文件夹下
+在vendor文件夹下新建文件夹codecible, 解压后复制yii2-phpredis到codecible文件夹下
 结构将是如下结构
 
 ``` php
-vendor\diszz\yii2-phpredis\Connection.php
+vendor\codecible\yii2-phpredis\Connection.php
 
 ```
 
 并在vendor\yiisoft\extensions.php 文件末尾添加如下配置:
 
 ``` php
-'diszz/yii2-phpredis' =>
+'codecible/yii2-phpredis' =>
     array (
-        'name' => 'diszz/yii2-phpredis',
+        'name' => 'codecible/yii2-phpredis',
         'version' => '1.0.0.0',
         'alias' =>
         array (
-            '@diszz/phpredis' => $vendorDir . '/diszz/yii2-phpredis',
+            '@codecible/phpredis' => $vendorDir . '/codecible/yii2-phpredis',
         ),
     ),
 
@@ -46,23 +46,23 @@ return [
     'timeZone' => 'PRC',
     'components' => [
         'cache' => [
-            //'class' => 'diszz\caching\FileCache',
-            'class' => 'diszz\phpredis\Cache',
+            //'class' => 'codecible\caching\FileCache',
+            'class' => 'codecible\phpredis\Cache',
         ],
         'redis' => [
-            'class' => 'diszz\phpredis\Connection',
+            'class' => 'codecible\phpredis\Connection',
             'hostname' => 'localhost',
             'port' => 6379,
             'database' => 0,
         ],
         'session' => [
-            'class' => 'diszz\phpredis\Session',
-            // 'class' => 'diszz\web\DbSession',
+            'class' => 'codecible\phpredis\Session',
+            // 'class' => 'codecible\web\DbSession',
             // 'db' => 'mydb',  // 数据库连接的应用组件ID，默认为'db'.
             // 'sessionTable' => 'my_session', // session 数据表名，默认为'session'.
         ],
 	'queue' => [
-              'class' => 'diszz\phpredis\Queue',
+              'class' => 'codecible\phpredis\Queue',
               'keyPrefix' => 'saas.queue:',
               'maxRunTimelong' => 299,//进程最大运行时间,单位秒
               'phpbin' => 'php',
