@@ -133,13 +133,13 @@ Yii::$app->queue->publish('queue/test-func', ['starttime' => $_logs['starttime1'
 
 ``` php
 2018-03-05 17:28:51 [-][-][-][error][yii\db\Exception] exception 'yii\db\Exception' with message 'Failed to read from socket.
-Redis command was: GET b4e9e33d1c3bc2b09b4b0cecd175e8d8' in /basicfinder/www/basicfinder_web/vendor/yiisoft/yii2-redis/Connection.php:663
+Redis command was: GET b4e9e33d1c3bc2b09b4b0cecd175e8d8' in /code/vendor/yiisoft/yii2-redis/Connection.php:663
 Stack trace:
-#0 /basicfinder/www/basicfinder_web/vendor/yiisoft/yii2-redis/Connection.php(652): yii\redis\Connection->parseResponse('GET b4e9e33d1c3...')
-#1 /basicfinder/www/basicfinder_web/vendor/yiisoft/yii2-redis/Cache.php(102): yii\redis\Connection->executeCommand('GET', Array)
-#2 /basicfinder/www/basicfinder_web/vendor/yiisoft/yii2/caching/Cache.php(114): yii\redis\Cache->getValue('b4e9e33d1c3bc2b...')
-#3 /basicfinder/www/basicfinder_web/vendor/yiisoft/yii2/db/Schema.php(137): yii\caching\Cache->get(Array)
-#4 /basicfinder/www/basicfinder_web/vendor/yiisoft/yii2/db/QueryBuilder.php(247): yii\db\Schema->getTableSchema('task_item')
+#0 /www/code/vendor/yiisoft/yii2-redis/Connection.php(652): yii\redis\Connection->parseResponse('GET b4e9e33d1c3...')
+#1 /www/code/vendor/yiisoft/yii2-redis/Cache.php(102): yii\redis\Connection->executeCommand('GET', Array)
+#2 /www/code/vendor/yiisoft/yii2/caching/Cache.php(114): yii\redis\Cache->getValue('b4e9e33d1c3bc2b...')
+#3 /www/code/vendor/yiisoft/yii2/db/Schema.php(137): yii\caching\Cache->get(Array)
+#4 /www/code/vendor/yiisoft/yii2/db/QueryBuilder.php(247): yii\db\Schema->getTableSchema('task_item')
 
 ```
 
