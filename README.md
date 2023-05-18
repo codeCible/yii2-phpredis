@@ -7,6 +7,7 @@ yii2框架的基于new Redis() 方式连接redis, 有效解决fgets, fwrite 操�
 
 1.命令安装
 php composer.phar require --prefer-dist codecible/yii2-phpredis dev-master
+
 或
 composer require --prefer-dist codecible/yii2-phpredis dev-master
 
